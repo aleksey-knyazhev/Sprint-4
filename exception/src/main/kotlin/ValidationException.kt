@@ -11,5 +11,5 @@ enum class ErrorCode(val code: Int, val msg: String) {
     EMAIL_INVALID_LENGTH(8, "Недопустимая длина. Допустимо не более 32 символов"),
     INSURANCE_NUMBER_INVALID_CHARACTER(9, "Недопустимый символ. Допустимы только цифры"),
     INSURANCE_NUMBER_INVALID_LENGTH(10, "Недопустимая длина. Допустимо равно 11 знаков"),
-    INSURANCE_NUMBER_CONTROL_NUMBER(11, "Недопустимый СНИЛС. Некорректное контрольное число")
+    INSURANCE_NUMBER_INVALID_CONTROL_NUMBER(11, "Недопустимый СНИЛС. Некорректное контрольное число")
 }
