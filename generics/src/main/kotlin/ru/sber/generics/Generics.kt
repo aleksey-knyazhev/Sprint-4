@@ -30,6 +30,13 @@ class Sorter<E: Comparable<E>> {
 }
 
 // 4.
-class Stack {
+class Stack<T> {
+    val stack = mutableListOf<T>()
+
+    fun isEmpty() = stack.isEmpty()
+
+    fun push(stackElement: T) = stack.add(stackElement)
+
+    fun pop(): T = stack.removeLast()
 
 }
